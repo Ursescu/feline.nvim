@@ -204,7 +204,7 @@ function M.winbar.setup(config)
     else
         winbar_gen:clear_state()
     end
-    vim.pretty_print(config.autocmd_triggers)
+
     if config.use_autocmd then
         utils.create_augroup({
             {
