@@ -190,7 +190,7 @@ function M.setup(config)
     end
 
     -- Ensures custom quickfix statusline isn't loaded
-    vim.g.qf_disable_statusline = true
+    vim.g.qf_disable_statusline = false
     vim.o.statusline = "%{%v:lua.require'feline'.generate_statusline()%}"
 end
 
